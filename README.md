@@ -14,9 +14,10 @@ cyberspace security practice of innovation and entrepreneurship course
 - [Pollardrho.py](https://github.com/fyl01/course-project/blob/main/Pollardrho.py): 利用rho思想实现的整数分解，与破解SM3无关。
 - [Rho_for_SM3.c](https://github.com/fyl01/course-project/blob/main/Rho_for_SM3.c): 利用rho思想实现了reduced SM3的碰撞。  
 
-已编写Makefile文件  
+已编写Makefile文件，以下是几个指令    
 ```shell
 $ make
 $ ./test
+$ make clean
 ```
 可得到产生碰撞的两个字符串（转化为16进制形式）和找到此次碰撞所需的时间。

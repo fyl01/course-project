@@ -85,8 +85,12 @@ int main(int argc, char const* argv[])
     hashhash_str(H1_, HASH_RESULT_LEN, H1_);     // H1_ = hash(hash(H1_))
 
     clock_t start = clock();
+    unsigned char a[HASH_RESULT_LEN];     // 记录产生碰撞的字符串
+    unsigned char b[HASH_RESULT_LEN];
     while(memcmp(H1, H1_, HASH_TRUNCATED_LEN))    // 当相等时，返回值为0  不能用strncmp？？？
     {
+        strncpy(a, HASH_RESULT_LEN, H1);
+        strncpy(b, HASH_RESULT_LEN, H1_);
         hash_str(H1, HASH_RESULT_LEN, H1);     // H1 = hash(H1)
         hashhash_str(H1_, HASH_RESULT_LEN, H1_);     // H1_ = hash(hash(H1_))
     }
@@ -95,12 +99,21 @@ int main(int argc, char const* argv[])
     printf("Find the collision!(%d bits)\n",HASH_TRUNCATED_LEN*8);
     /*      print collision      */
     printf("Initial string:%s\n",sr);
-    printf("H1 = ");
+    printf("a(in hex) = ");
+    for (int i = 0; i < HASH_RESULT_LEN; i++) {
+        printf("%02x", a[i]);
+    }
+    printf("\n");
+    printf("b(in hex) = ");
+    for (int i = 0; i < HASH_RESULT_LEN; i++) {
+        printf("%02x", b[i]);
+    }
+    printf("H1 = hash(a) = ");
     for (int i = 0; i < HASH_RESULT_LEN; i++) {
         printf("%02x", H1[i]);
     }
     printf("\n");
-    printf("H1_ = ");
+    printf("H1_ = hash(b) = ");
     for (int i = 0; i < HASH_RESULT_LEN; i++) {
         printf("%02x", H1_[i]);
     }

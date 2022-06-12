@@ -89,8 +89,8 @@ int main(int argc, char const* argv[])
     unsigned char b[HASH_RESULT_LEN];
     while(memcmp(H1, H1_, HASH_TRUNCATED_LEN))    // 当相等时，返回值为0  不能用strncmp？？？
     {
-        strncpy(a, HASH_RESULT_LEN, H1);
-        strncpy(b, HASH_RESULT_LEN, H1_);
+        strncpy(a, H1, HASH_RESULT_LEN);
+        strncpy(b, H1_, HASH_RESULT_LEN);
         hash_str(H1, HASH_RESULT_LEN, H1);     // H1 = hash(H1)
         hashhash_str(H1_, HASH_RESULT_LEN, H1_);     // H1_ = hash(hash(H1_))
     }

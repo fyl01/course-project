@@ -108,7 +108,7 @@ int main(int argc, char const* argv[])
     for (int i = 0; i < HASH_RESULT_LEN; i++) {
         printf("%02x", b[i]);
     }
-    printf("H1 = hash(a) = ");
+    printf("\nH1 = hash(a) = ");
     for (int i = 0; i < HASH_RESULT_LEN; i++) {
         printf("%02x", H1[i]);
     }

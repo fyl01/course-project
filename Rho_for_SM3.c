@@ -113,7 +113,7 @@ int main(int argc, char const* argv[])
         printf("%02x", H1[i]);
     }
     printf("\n");
-    printf("H1_ = hash(b) = ");
+    printf("H1_ = hash(hash(b)) = ");
     for (int i = 0; i < HASH_RESULT_LEN; i++) {
         printf("%02x", H1_[i]);
     }

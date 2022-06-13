@@ -7,7 +7,7 @@ cyberspace security practice of innovation and entrepreneurship course
 |---|---|
 | 8 bits | 0.000536 seconds |
 | 16 bits | 0.110520 seconds |
-| 24 bits | $\approx$ 12 seconds |
+| 24 bits | $\approx$ 10 seconds |
 | 32 bits | $\approx$ 5 hours |
 
 <font size="1">The above data vary greatly with the change of the initial value.</font><br />  
@@ -20,4 +20,5 @@ $ make
 $ ./test
 $ make clean
 ```
+test文件已上传（32bit碰撞），可直接./test运行程序。
 可得到产生碰撞的两个字符串（转化为16进制形式）和找到此次碰撞所需的时间。

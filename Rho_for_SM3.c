@@ -108,6 +108,11 @@ int main(int argc, char const* argv[])
     for (int i = 0; i < HASH_RESULT_LEN; i++) {
         printf("%02x", b[i]);
     }
+    printf("\nhash(b)(in hex) = ");
+    hash_str(b, HASH_RESULT_LEN, b);
+    for (int i = 0; i < HASH_RESULT_LEN; i++) {
+        printf("%02x", b[i]);
+    }
     printf("\nH1 = hash(a) = ");
     for (int i = 0; i < HASH_RESULT_LEN; i++) {
         printf("%02x", H1[i]);

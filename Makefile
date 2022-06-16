@@ -4,7 +4,7 @@ test:Rho_for_SM3.o
 	gcc Rho_for_SM3.o -o test -lcrypto
 
 Rho_for_SM3.o:Rho_for_SM3.c
-	gcc Rho_for_SM3.c -c -Wall -g -o Rho_for_SM3.o -lcrypto
+	gcc Rho_for_SM3.c -c -g -o Rho_for_SM3.o -lcrypto
 
 clean:
 	rm *.o test -rf

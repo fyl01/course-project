@@ -11,8 +11,8 @@ cyberspace security practice of innovation and entrepreneurship course
 | 32 bits | $\approx$ 5 hours |
 
 <font size="1">The above data vary greatly with the change of the initial value.</font><br />  
-- [Pollardrho.py](https://github.com/fyl01/course-project/blob/main/Pollardrho.py): 利用rho思想实现的整数分解，与破解SM3无关。
-- [Rho_for_SM3.c](https://github.com/fyl01/course-project/blob/main/Rho_for_SM3.c): 利用rho思想实现了reduced SM3的碰撞。  
+- [Pollardrho.py](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/Pollardrho.py): 利用rho思想实现的整数分解，与破解SM3无关。
+- [Rho_for_SM3.c](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/Rho_for_SM3.c): 利用rho思想实现了reduced SM3的碰撞。  
 
 已编写Makefile文件，以下是几个指令    
 ```shell

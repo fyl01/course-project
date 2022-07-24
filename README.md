@@ -89,4 +89,9 @@ SM3的迭代压缩步骤没有直接使用数据分组进行运算，而是使�
 ### Attack Step  
 1.	随机生成一个消息(secret)，用SM3函数算出hash值(hash1)
 2.	生成一个附加消息(m')。首先用hash1推算出这一次加密结束后8个向量的值，再以它们作为初始向量，去加密m’，得到另一个hash值(hash2)
-3.	计算secret + padding + m'的hash值(hash3)，如果攻击成功，hash2应该和hash3相等
+3.	计算secret + padding + m'的hash值(hash3)，如果攻击成功，hash2应该和hash3相等  
+
+可执行文件已上传，输入以下指令，即可得到攻击过程和结果  
+```shell
+$ ./sm3
+```

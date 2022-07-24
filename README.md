@@ -1,6 +1,6 @@
 # course-project
 cyberspace security practice of innovation and entrepreneurship course
-## Project 1：implement the Rho method of reduced SM3
+## Project 1：implement the Rho method of reduced SM3（实现32 bits第二原象攻击）
 #### 利用Pollard Rho算法实现了第二原象攻击，即对于指定的字符串，找到与之哈希相同的字符串。最终，在可接受的时间里，实现了$32$比特的第二原象攻击。   
 **Environment:** Ubuntu 20.04  
 **Testing Result：**
@@ -24,7 +24,7 @@ $ make clean
 test文件已上传（32bit碰撞），可直接./test运行程序。
 可得到产生碰撞的两个字符串（转化为16进制形式）和找到此次碰撞所需的时间。
 
-## Project 2: naïve birthday attack of reduced SM3  
+## Project 2: naïve birthday attack of reduced SM3（实现48 bits碰撞攻击）  
 #### 利用朴素算法对SM3进行碰撞攻击，直接寻找两个哈希相同的字符串，因为攻击难度远小于Project 1，所以实现效果好，在可接受的时间里实现了$48$比特的碰撞攻击。  
 **Environment:** Pycharm 4.5.3 Python 3.9  
 **Testing Result：**

@@ -1,6 +1,7 @@
 # course-project
 cyberspace security practice of innovation and entrepreneurship course
 ## Project 1：implement the Rho method of reduced SM3
+**利用Pollard Rho算法实现了第二原象攻击，即对于指定的字符串，找到与之哈希相同的字符串**  
 **Environment:** Ubuntu 20.04  
 **Result：**
 | Collision bit | Running time |
@@ -23,7 +24,21 @@ $ make clean
 test文件已上传（32bit碰撞），可直接./test运行程序。
 可得到产生碰撞的两个字符串（转化为16进制形式）和找到此次碰撞所需的时间。
 
-## Project 2: length extension attack for SM3 
+## Project 2: naïve birthday attack of reduced SM3  
+**利用朴素算法对SM3进行碰撞攻击，直接寻找两个哈希相同的字符串，因为攻击难度远小于Project 1，所以实现效果好**  
+**Environment:** Pycharm 4.5.3 Python 3.9  
+**Result：**
+| Collision bit | Running time |
+|---|---|
+| 8 bits | 0.000536 seconds |
+| 16 bits | 0.110520 seconds |
+| 24 bits | $\approx$ 10 seconds |
+| 32 bits | $\approx$ 30 seconds |
+| 36 bits | $\approx$ 100 seconds |
+| 40 bits | $\approx$ 330 seconds |
+| 48 bits | $\approx$ 3 hours |
+
+## Project 3: length extension attack for SM3 
 ### Introduction
 ### 哈希长度扩展攻击(Hash Length Extension Attacks)
 

@@ -56,3 +56,6 @@ $ ./sm3
 ## 运行结果
 ![](https://github.com/fyl01/course-project/blob/main/Project%203:length%20extension%20attack/result.png)  
 可以看到第二次的哈希值和第三次构造的字符串的哈希值相同，攻击成功。
+
+## 参考资料
+SM3的分布实现：https://blog.csdn.net/nicai_hualuo/article/details/121555000

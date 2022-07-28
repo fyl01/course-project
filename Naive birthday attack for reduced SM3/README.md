@@ -1,6 +1,6 @@
 # Project 2: naïve birthday attack of reduced SM3（实现48 bits碰撞攻击） 
 ## 原理
-**碰撞攻击**，找到两个任意不同的消息m1和m2，使hash（m1）= hash（m2）。 理论复杂度为$O(2^{n \over 2})$
+**碰撞攻击**，找到两个任意不同的消息m1和m2，使hash（m1）= hash（m2）。 理论复杂度为$O(2^{n \over 2})$  
 朴素的生日攻击方案如下：
 1. 计算任意选择的2^(n/2)个消息的哈希，并将所有的消息-哈希对存下来
 2. 重排哈希值列表
@@ -28,3 +28,14 @@
 | 36 bits | $\approx$ 85 seconds |
 | 40 bits | $\approx$ 26 minutes |
 | 48 bits | $\approx$ 1.6 hours |
+
+8比特运行结果截图
+![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_8.png)
+16比特运行结果截图
+![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_16.png)
+24比特运行结果截图
+![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_24.png)
+32比特运行结果截图
+![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_32.png)
+48比特运行结果截图
+![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_48.png)

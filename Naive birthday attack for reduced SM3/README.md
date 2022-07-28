@@ -4,7 +4,7 @@
 朴素的生日攻击方案如下：
 1. 计算任意选择的2^(n/2)个消息的哈希，并将所有的消息-哈希对存下来
 2. 重排哈希值列表
-3. 搜索排序后的列表以查找具有相同哈希值的两个连续条目
+3. 搜索排序后的列表以查找具有相同哈希值的两个连续条目  
 可以看到，这种方法需要大量的内存，同时对大量元素进行排序会减慢搜索的速度。  
 利用朴素生日攻击算法对SM3进行碰撞攻击，直接寻找两个哈希相同的字符串，因为攻击难度远小于Project 1，所以实现效果好，在可接受的时间里实现了$48$比特的碰撞攻击。  
 
@@ -30,12 +30,12 @@
 | 48 bits | $\approx$ 1.6 hours |
 
 8比特运行结果截图
-![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_8.png)
+![image](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_8.png)
 16比特运行结果截图
-![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_16.png)
+![image](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_16.png)
 24比特运行结果截图
-![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_24.png)
+![image](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_24.png)
 32比特运行结果截图
-![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_32.png)
+![image](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_32.png)
 48比特运行结果截图
-![](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_48.png)
+![image](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_48.png)

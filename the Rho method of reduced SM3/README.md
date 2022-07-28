@@ -7,6 +7,7 @@ Rho攻击（来自Pollard Rho算法），流程如下
 2. 计算H2=Hash(H1),H2'=Hash(Hash(H1'))
 3. 迭代该过程并计算Hi+1=Hash(Hi)，Hi+1'=Hash(Hash(Hi'))，直到有一个i可以满足Hi+1=Hi+1'  
 对应的示意图如下  
+![](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/headImg.png)  
 
 ## 代码说明
 - [Pollardrho.py](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/Pollardrho.py): 利用rho思想实现的整数分解，与破解SM3无关。
@@ -14,6 +15,7 @@ Rho攻击（来自Pollard Rho算法），流程如下
 在Rho_for_SM3.c中，利用openssl密码库，分别实现了一次SM3哈希函数hashstr()和两次SM3哈希函数hashhashstr()
 
 ## 运行指导
+**运行环境：** Ubuntu 20.04  
 已编写Makefile文件，以下是几个指令    
 ```shell
 $ make
@@ -24,13 +26,13 @@ test文件已上传（32bit碰撞），可直接./test运行程序。
 可得到产生碰撞的两个字符串（转化为16进制形式）和找到此次碰撞所需的时间。
 
 ## 运行结果
-**Environment:** Ubuntu 20.04  
 **Testing Result：**
 | Collision bit | Running time |
 |---|---|
-| 8 bits | 0.000536 seconds |
-| 16 bits | 0.110520 seconds |
+| 8 bits | $\approx$ 0.0005 seconds |
+| 16 bits | $\approx$ 0.1 seconds |
 | 24 bits | $\approx$ 10 seconds |
 | 32 bits | $\approx$ 5 hours |
 
 <font size="1">The above data vary greatly with the change of the initial value.</font><br />  
+

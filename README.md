@@ -21,9 +21,9 @@ cyberspace security practice of innovation and entrepreneurship course
 **Testing Result：**
 | Collision bit | Running time |
 |---|---|
-| 8 bits | 0.006836 seconds |
-| 16 bits | 0.057584 seconds |
-| 24 bits | $\approx$ 4.33 seconds |
+| 8 bits | $\approx$ 0.005 seconds |
+| 16 bits | $\approx$ 0.01 seconds |
+| 24 bits | $\approx$ 3 seconds |
 | 32 bits | $\approx$ 30 seconds |
 | 36 bits | $\approx$ 85 seconds |
 | 40 bits | $\approx$ 26 minutes |

@@ -7,7 +7,7 @@ Rho攻击（来自Pollard Rho算法），流程如下
 2. 计算H2=Hash(H1),H2'=Hash(Hash(H1'))
 3. 迭代该过程并计算Hi+1=Hash(Hi)，Hi+1'=Hash(Hash(Hi'))，直到有一个i可以满足Hi+1=Hi+1'  
 对应的示意图如下  
-![](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/headImg.png)  
+![image](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/headImg.png)  
 
 ## 代码说明
 - [Pollardrho.py](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/Pollardrho.py): 利用rho思想实现的整数分解，与破解SM3无关。
@@ -32,7 +32,14 @@ test文件已上传（32bit碰撞），可直接./test运行程序，得到产�
 | 8 bits | $\approx$ 0.0002 seconds |
 | 16 bits | $\approx$ 0.1 seconds |
 | 24 bits | $\approx$ 10 seconds |
-| 32 bits | $\approx$ 5 hours |
+| 32 bits | $\approx$ 30 minutes |
 
 <font size="1">The above data vary greatly with the change of the initial value.</font><br />  
-
+8比特运行结果截图
+![image](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/rhoresult_8.png)
+16比特运行结果截图
+![image](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/rhoresult_16.png)
+24比特运行结果截图
+![image](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/rhoresult_24.png)
+32比特运行结果截图
+![image](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/rhoresult_32.png)

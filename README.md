@@ -1,5 +1,6 @@
 # course-project
-cyberspace security practice of innovation and entrepreneurship course
+cyberspace security practice of innovation and entrepreneurship course  
+**所有项目均个人（傅宇琳 201900460014）完成，以下是项目清单，具体实现原理见对应文件夹中的README.md文件**  
 ## Project 1：implement the Rho method of reduced SM3（实现32 bits第二原象攻击）
 #### 利用Pollard Rho算法实现了第二原象攻击，即对于指定的字符串，找到与之哈希相同的字符串。最终，在可接受的时间里，实现了$32$比特的第二原象攻击。   
 **Environment:** Ubuntu 20.04  

@@ -9,7 +9,7 @@ cyberspace security practice of innovation and entrepreneurship course
 | 8 bits | $\approx$ 0.0002 seconds |
 | 16 bits | $\approx$ 0.1 seconds |
 | 24 bits | $\approx$ 10 seconds |
-| 32 bits | $\approx$ 5 hours |
+| 32 bits | $\approx$ 30 minutes |
 
 <font size="1">The above data vary greatly with the change of the initial value.</font><br />  
 - [Pollardrho.py](https://github.com/fyl01/course-project/blob/main/the%20Rho%20method%20of%20reduced%20SM3/Pollardrho.py): 利用rho思想实现的整数分解，与破解SM3无关。

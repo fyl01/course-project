@@ -1,5 +1,6 @@
 # course-project
 cyberspace security practice of innovation and entrepreneurship course  
+
 **所有项目均个人（傅宇琳 201900460014）完成，以下是项目清单，具体实现原理步骤等见对应文件夹中的README.md文件**  
 ## Project 1：implement the Rho method of reduced SM3（实现32 bits第二原象攻击）  
 **Environment:** Ubuntu 20.04  
@@ -27,7 +28,7 @@ cyberspace security practice of innovation and entrepreneurship course
 | 32 bits | $\approx$ 30 seconds |
 | 36 bits | $\approx$ 85 seconds |
 | 40 bits | $\approx$ 26 minutes |
-| 48 bits | $\approx$ 1.6 hours |
+| 48 bits | $\approx$ 2 hours |
 
 ## Project 3: length extension attack for SM3 
 ### 哈希长度扩展攻击(Hash Length Extension Attacks)

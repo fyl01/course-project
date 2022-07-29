@@ -27,7 +27,7 @@
 | 32 bits | $\approx$ 30 seconds |
 | 36 bits | $\approx$ 85 seconds |
 | 40 bits | $\approx$ 26 minutes |
-| 48 bits | $\approx$ 1.6 hours |
+| 48 bits | $\approx$ 2 hours |
 
 8比特运行结果截图
 ![image](https://github.com/fyl01/course-project/blob/main/Naive%20birthday%20attack%20for%20reduced%20SM3/naiveresult_8.png)

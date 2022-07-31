@@ -14,7 +14,7 @@ Merkle Tree本质上是二叉树，利用类这个数据结构，建立起一个
 
 ## 运行结果
 运行结果截图如下  
-
+![image](https://github.com/fyl01/course-project/blob/main/MerkleTree/result.png)
 
 ## 参考资料
 **RFC6962** https://www.rfc-editor.org/rfc/rfc6962
